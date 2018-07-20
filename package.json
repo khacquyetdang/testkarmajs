@@ -11,16 +11,25 @@
         "url": "http://github.com/ariya/coverage-jasmine-istanbul-karma.git"
     },
     "devDependencies": {
-        "karma-phantomjs-launcher": "^1.0.4"
+        "babel-polyfill": "^6.26.0",
+        "chai": "^4.1.2",
+        "karma-mocha": "^1.3.0",
+        "karma-phantomjs-launcher": "^1.0.4",
+        "karma-sinon-chai": "^2.0.2",
+        "mocha": "^5.2.0",
+        "puppeteer": "^1.6.0",
+        "sinon": "^6.1.3"
     },
     "scripts": {
-        "test": "node_modules/.bin/karma start my.conf.js"
+        "test": "node_modules/.bin/karma start my.conf.js",
+        "test:debug": "node_modules/.bin/karma start my.conf.js --single-run=false --debug"
     },
     "dependencies": {
         "jasmine": "^3.1.0",
         "karma": "^2.0.4",
         "karma-chrome-launcher": "^2.2.0",
         "karma-coverage": "^1.1.2",
-        "karma-jasmine": "^1.1.2"
+        "karma-jasmine": "^1.1.2",
+        "sinon-chai": "^3.2.0"
     }
 }
